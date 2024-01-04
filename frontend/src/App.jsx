@@ -1,4 +1,11 @@
+import { useState } from "react";
 function App() {
+  const [code, setCode] = useState(null);
+  const handleClick = () => {
+    const code = document.getElementById("code").value;
+    setCode(code);
+    //Some backend opeation
+  };
   return (
     <>
       <div className="w-screen h-screen flex justify-center items-center">
